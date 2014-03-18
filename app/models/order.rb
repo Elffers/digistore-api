@@ -6,7 +6,7 @@ class Order < ActiveRecord::Base
   scope :paid,      -> { where(status: 'paid') }
   scope :cancelled, -> { where(status: 'cancelled') }
 
-  def sum
+  def total
     items.sum('current_price')
   end
 
