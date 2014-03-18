@@ -11,22 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140318184756) do
+ActiveRecord::Schema.define(version: 20140318191654) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "carts", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "item_id"
-  end
-
   create_table "items", force: true do |t|
-    t.integer  "cart_id"
+    t.integer  "order_id"
     t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "quantity"
+    t.integer  "current_price"
   end
 
   create_table "orders", force: true do |t|
@@ -49,7 +45,6 @@ ActiveRecord::Schema.define(version: 20140318184756) do
     t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "item_id"
   end
 
 end
