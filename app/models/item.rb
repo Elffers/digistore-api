@@ -1,4 +1,4 @@
-class Items < ActiveRecord::Base
+class Item < ActiveRecord::Base
   belongs_to :product
   belongs_to :order
 end

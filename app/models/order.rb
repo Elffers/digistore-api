@@ -1,6 +1,6 @@
 class Order < ActiveRecord::Base
-  has_many :products, through: :items
   has_many :items
+  has_many :products, through: :items
 
   scope :pending,   -> { where(status: 'pending') }
   scope :paid,      -> { where(status: 'paid') }
