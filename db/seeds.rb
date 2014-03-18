@@ -79,38 +79,38 @@ Product.create(
                 description: "Fluffy fur stretching scratched give me fish, catnip toss the mousie shed everywhere attack your ankles puking lick. Climb the curtains puking litter box catnip bat, scratched jump on the table litter box kittens puking bat jump. Hiss scratched hiss zzz jump tail flick, claw biting litter box judging you leap. Biting shed everywhere jump on the table sleep in the sink, jump on the table sunbathe meow biting jump on the table lay down in your way. Lick eat the grass hiss toss the mousie I don't like that food rip the couch, run tail flick lick run purr I don't like that food. Hairball eat kittens sleep on your keyboard, sunbathe sunbathe attack your ankles fluffy fur climb the curtains judging you."
                 )
 Item.create(
-            product: 1,
+            product_id: 1,
             quantity: 1,
-            order: 1,
+            order_id: 1,
             current_price: 1000
           )
 Item.create(
-            product: 2,
+            product_id: 2,
             quantity: 5,
-            order: 2,
+            order_id: 2,
             current_price: 2550
           )
 Item.create(
-            product: 3,
+            product_id: 3,
             quantity: 1,
-            order: 1,
+            order_id: 1,
             current_price: 2550
             )
 Item.create(
-            product: 4,
+            product_id: 4,
             quantity: 1,
-            order: 2,
+            order_id: 2,
             current_price: 2550
             )
 Item.create(
-            product: 5,
+            product_id: 5,
             quantity: 1,
-            order: 1,
+            order_id: 1,
             current_price: 2550
             )
 Item.create(
-            product: 6,
+            product_id: 6,
             quantity: 1,
-            order: 3,
+            order_id: 3,
             current_price: 2550
             )
