@@ -7,7 +7,7 @@ class Order < ActiveRecord::Base
   scope :cancelled, -> { where(status: 'cancelled') }
 
   def total
-    items.sum('current_price')
+    items.reduce(0){ |sum, item| sum + item.subtotal }
   end
 
 end
