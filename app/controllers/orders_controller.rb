@@ -1,9 +1,9 @@
 class OrdersController < ApplicationController
 
   def index
-    @pending ||= Order.pending
-    @paid ||= Order.paid
-    @cancelled ||=Order.cancelled
+    @orders = Order.all
+    # @paid ||= Order.paid
+    # @cancelled ||=Order.cancelled
   end
 
   def show
