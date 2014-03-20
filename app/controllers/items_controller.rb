@@ -19,7 +19,20 @@ class ItemsController < ApplicationController
     render :show
   end
 
+  def update
+    @item = Item.find(params[:id])
+    @item.update(quantity: params[:quantity])
+    render :show
+  end
+
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy
+    render :show
+  end
+
  private
+
   def item_params
     params.require(:item).permit(:cart, :product, :quantity, :current_price)
   end
