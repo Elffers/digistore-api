@@ -18,7 +18,7 @@ module DigstoreApi
         # this allows any other domain to access your API
         origins 'http://localhost:9000'
         # this allows them to access any URL. Can specify which resource, i.e. /products
-        resource '*', :headers => :any, :methods => [:get, :post, :options, :delete]
+        resource '*', :headers => :any, :methods => [:get, :post, :options, :delete, :put, :update]
       end
     end
     # Settings in config/environments/* take precedence over those specified here.
