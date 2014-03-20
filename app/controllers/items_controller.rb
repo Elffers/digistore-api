@@ -21,7 +21,7 @@ class ItemsController < ApplicationController
 
   def update
     @item = Item.find(params[:id])
-    @item.update(quantity: params[:quantity])
+    @item.update(quantity: params[:item][:quantity])
     render :show
   end
 
