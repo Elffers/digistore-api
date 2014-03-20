@@ -10,8 +10,8 @@ class CartsController < ApplicationController
   end
 
   def create
-    @order = Order.new
-    @order.save
+    @cart = Cart.new
+    @cart.save
     render :show
   end
 

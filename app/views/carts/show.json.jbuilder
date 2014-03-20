@@ -1,8 +1,4 @@
 json.cart do
   json.extract! @cart, :id
-  array = []
-  @items.each do |item|
-    array << item.id
-  end
-  json.items array
+  json.items @cart.items.map {|item| item.id}
 end
