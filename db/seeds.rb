@@ -81,36 +81,39 @@ Product.create(
 Item.create(
             product_id: 1,
             quantity: 1,
-            order_id: 1,
+            cart_id: 1,
             current_price: 1000
           )
 Item.create(
             product_id: 2,
             quantity: 5,
-            order_id: 2,
+            cart_id: 2,
             current_price: 2550
           )
 Item.create(
             product_id: 3,
             quantity: 1,
-            order_id: 1,
+            cart_id: 1,
             current_price: 2550
             )
 Item.create(
             product_id: 4,
             quantity: 1,
-            order_id: 2,
+            cart_id: 2,
             current_price: 2550
             )
 Item.create(
             product_id: 5,
             quantity: 1,
-            order_id: 1,
-            current_price: 2550
+            cart_id: 1,
+            current_price: 2550,
             )
 Item.create(
             product_id: 6,
             quantity: 1,
-            order_id: 3,
-            current_price: 2550
+            cart_id: 3,
+            current_price: 2550,
             )
+Cart.create(
+
+)
