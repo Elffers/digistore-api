@@ -17,6 +17,7 @@ DigstoreApi::Application.routes.draw do
     resources :items
     resources :carts
     resources :products
+    resources :orders
   end
 
 end

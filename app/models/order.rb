@@ -4,9 +4,9 @@ class Order < ActiveRecord::Base
   scope :paid,      -> { where(status: 'paid') }
   scope :cancelled, -> { where(status: 'cancelled') }
 
-  def total
-    items.reduce(0){ |sum, item| sum + item.subtotal }
-  end
+  # def total
+  #   items.reduce(0){ |sum, item| sum + item.subtotal }
+  # end
 
 end
 
