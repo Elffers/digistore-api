@@ -15,6 +15,7 @@ class OrdersController < ApplicationController
       last_name: order_params[:last_name],
       status: order_params[:status],
       email: order_params[:email],
+      credit_card: order_params[:credit_card],
       zip_code: order_params[:zip_code],
       cvv: order_params[:cvv],
       expiration: order_params[:expiration],
