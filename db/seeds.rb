@@ -12,7 +12,8 @@ Order.create(
               email: "ada@lovelace.com",
               status: "pending", credit_card: "1234123412341234",
               zip_code: "12345", cvv: "123",
-              expiration: "07-2017"
+              expiration: "07-2017",
+              cart_id: 1
             )
 
 Order.create(
@@ -116,4 +117,4 @@ Item.create(
             )
 Cart.create(
 
-)
+            )

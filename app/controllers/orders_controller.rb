@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
       zip_code: order_params[:zip_code],
       cvv: order_params[:cvv],
       expiration: order_params[:expiration],
-      # total: order_params[:total]
+      total: order_params[:total]
     )
     render :show
   end
