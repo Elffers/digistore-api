@@ -26,7 +26,9 @@ class OrdersController < ApplicationController
 
   def update
     @order = Order.find(params[:id])
-    @order.update(order_params)
+    @order.update(
+      status: order_params[:status]
+      )
     render :show
   end
 

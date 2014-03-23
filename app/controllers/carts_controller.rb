@@ -1,5 +1,4 @@
 class CartsController < ApplicationController
-
   def index
     @carts = Cart.all
   end
@@ -14,5 +13,4 @@ class CartsController < ApplicationController
     @cart.save
     render :show
   end
-
 end
