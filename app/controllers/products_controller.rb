@@ -19,10 +19,16 @@ class ProductsController < ApplicationController
     render :show
   end
 
+  def update
+    @product = Product.find(params[:id])
+    @product.update(product_params)
+    render :show
+  end
+
   private
 
   def product_params
-    params.require('product').permit(:id, :name, :price, :description, :avatar, :image)
+    params.require(:product).permit(:id, :name, :price, :description, :avatar, :image)
   end
 
 end
