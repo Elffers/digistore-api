@@ -22,7 +22,8 @@ Order.create(
               email: "eric@hodel.com",
               status: "paid", credit_card: "1234123412341234",
               zip_code: "12345", cvv: "123",
-              expiration: "07-2017"
+              expiration: "07-2017",
+              cart_id: 2
             )
 
 Order.create(
@@ -31,7 +32,8 @@ Order.create(
               email: "jeff@lembeck.com",
               status: "cancelled", credit_card: "1234123412341234",
               zip_code: "12345", cvv: "123",
-              expiration: "07-2017"
+              expiration: "07-2017",
+              cart_id: 3
             )
 
 Product.create(
@@ -115,6 +117,4 @@ Item.create(
             cart_id: 3,
             current_price: 2550,
             )
-Cart.create(
-
-            )
+3.times { Cart.create()}
