@@ -14,6 +14,7 @@ class ProductsController < ApplicationController
   end
 
   def destroy
+    # TODO: before action: check if it has any items
     @product = Product.find(params[:id])
     @product.destroy
     render :show
