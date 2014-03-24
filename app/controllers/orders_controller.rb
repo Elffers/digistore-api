@@ -21,6 +21,11 @@ class OrdersController < ApplicationController
       expiration: order_params[:expiration],
       total: order_params[:total]
     )
+    if @order.save
+      OrderMailer.confirmation(@checkout.id).deliver
+    else
+
+    end
     render :show
   end
 
